@@ -1,0 +1,86 @@
+* {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 25px;
+}
+td {
+  height: 60px;
+  width: 60px;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: inherit;
+  width: fit-content;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.btns {
+ 
+  margin: 1%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
+}
+button{
+  margin-left: 4%;
+}
+
+
+input {
+  margin: 0;
+  width: inherit;
+  height: inherit;
+  border: none;
+  text-align: center;
+  caret-color: transparent;
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  background-color: #344861;
+  outline: none;
+}
+td:nth-child(3),
+td:nth-child(6) {
+  border-right: 2px solid black;
+}
+
+tr:nth-child(3),
+tr:nth-child(6) {
+  border-bottom: 2px solid black;
+}
+.r0 {
+  background-color: #4586d4;
+}
+.dis {
+  background-color: #ebebe4;
+}
+
+.bgcolor{
+  background-color: #e2ebf3;
+}
+
+.selected{
+  background-color: #bbdefb;
+
+}
+@media only screen and (max-width:700px) {
+  td{
+    height: 30px;
+    width: 30px;
+  }
+}
+@media only screen and (max-width:350px) {
+  td{
+    height: 20px;
+    width: 20px;
+  
+}}
